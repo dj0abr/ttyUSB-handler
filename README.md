@@ -27,7 +27,8 @@ and use the output of above commands as parameters, also specify the serial spee
 
 this init function automatically creates a new thread and a communication pipe.
 
-## 3) now get the received data from the serialUSB port simply check if the receive pipe is filled with data:
+## 3) now get the received data from the serialUSB port
+simply check if the receive pipe is filled with data:
 
 > read_pipe(idx, 'r')
 
