@@ -19,7 +19,7 @@ This is done with these commands in the linux terminal:
 manually put the result of above commands into a static string or a #define statement
 
 ## 2) open the serial interface:
-make a call to  
+make a call to:
 
 ***init_serial_interface(char *idserial, char *idVendor, int speed)***
 
