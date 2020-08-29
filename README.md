@@ -1,4 +1,4 @@
-# ttyUSB-finder
+# ttyUSB-handler (port finder and thread safe receiver)
 a common problem with serial-USB converters is the randomly assigned number.
 This number depends on the sequence the OS detects the USB adapter.
 You can never be sure if your USBserial adapter got ttyUSB0 or ttyUSB1 and so on.
