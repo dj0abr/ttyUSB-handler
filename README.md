@@ -25,4 +25,10 @@ and use the output of above commands as parameters, also specify the serial spee
 this init function automatically creates a new thread and a communication pipe.
 
 3) the get the received data from the serialUSB port simply check if the receive pipe is filled with data:
+read_pipe(idx, 'r')
+
+for more details see the description at the beginning of the C files.
+
+good luck
+Kurt, DJ0ABR
 
