@@ -6,7 +6,7 @@ This makes it painful to write a program which reliably uses a serial port. With
 
 This piece of software solves this problem by using the serialID and vendorID of a USBserial adapter.
 
-The second common problem is to read from a serial port "unblocked", with disturbing the other program loops. This is also handled by this software. Each receiver runs in a separate thread. Data transfer is done with thread safe pipes. After the serial port is initialized you only need to check a pipe if received data are available.
+The second common problem is to read from a serial port "unblocked", without disturbing the other program loops. This is also handled by this software. Each receiver runs in a separate thread. Data transfer is done with thread safe pipes. After the serial port is initialized you only need to check a pipe if received data are available.
 
 These steps are required:
 
