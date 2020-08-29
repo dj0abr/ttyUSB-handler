@@ -13,20 +13,23 @@ Connect ONLY ONE serialUSB adapter to your computer!
 This is done with these commands in the linux terminal:
 
 ***udevadm info -a -p  $(udevadm info -q path -n /dev/ttyUSB0) | grep '{serial}' | cut -d \" -f2 | head -n 1***
+
 ***udevadm info -a -p  $(udevadm info -q path -n /dev/ttyUSB0) | grep '{idVendor}' | cut -d \" -f2 | head -n 1***
 
 manually put the result of above commands into a static string or a #define statement
 
 2) open the serial interface:
 make a call to  
-init_serial_interface(char *idserial, char *idVendor, int speed)
+
+***init_serial_interface(char *idserial, char *idVendor, int speed)***
 
 and use the output of above commands as parameters, also specify the serial speed as parameter i.e: B9600
 
 this init function automatically creates a new thread and a communication pipe.
 
 3) the get the received data from the serialUSB port simply check if the receive pipe is filled with data:
-read_pipe(idx, 'r')
+
+***read_pipe(idx, 'r')***
 
 for more details see the description at the beginning of the C files.
 
