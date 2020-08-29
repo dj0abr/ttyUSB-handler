@@ -36,6 +36,9 @@ simply check if the receive pipe is filled with data:
 
 for more details see the description at the beginning of the C files.
 
+## 4) use in your software
+copy these files into your project directory and include them into you make file. Then use init_serial_interface() and read_pipe() as described.
+
 good luck
 Kurt, DJ0ABR
 
