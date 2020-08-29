@@ -8,7 +8,7 @@ This piece of software solves this problem by using the serialID and vendorID of
 
 These steps are required:
 
-1) find the serial ID and vendor ID of your adapter. 
+## 1) find the serial ID and vendor ID of your adapter. 
 Connect ONLY ONE serialUSB adapter to your computer!
 This is done with these commands in the linux terminal:
 
@@ -18,9 +18,8 @@ This is done with these commands in the linux terminal:
 
 manually put the result of above commands into a static string or a #define statement
 
-2) open the serial interface:
+## 2) open the serial interface:
 make a call to  
-
 
 ***init_serial_interface(char *idserial, char *idVendor, int speed)***
 
