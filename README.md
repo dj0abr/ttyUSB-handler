@@ -21,7 +21,7 @@ manually put the result of above commands into a static string or a #define stat
 ## 2) open the serial interface:
 make a call to:
 
-***init_serial_interface(char *idserial, char *idVendor, int speed)***
+> init_serial_interface(char *idserial, char *idVendor, int speed)
 
 and use the output of above commands as parameters, also specify the serial speed as parameter i.e: B9600
 
