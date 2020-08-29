@@ -11,6 +11,7 @@ These steps are required:
 1) find the serial ID and vendor ID of your adapter. 
 Connect ONLY ONE serialUSB adapter to your computer!
 This is done with these commands in the linux terminal:
+
 ***udevadm info -a -p  $(udevadm info -q path -n /dev/ttyUSB0) | grep '{serial}' | cut -d \" -f2 | head -n 1***
 ***udevadm info -a -p  $(udevadm info -q path -n /dev/ttyUSB0) | grep '{idVendor}' | cut -d \" -f2 | head -n 1***
 
